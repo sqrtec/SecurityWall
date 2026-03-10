@@ -1,0 +1,46 @@
+@use '../abstracts/variables' as v;
+
+header {
+    background-color: #F6F8F9;
+
+    nav {
+        padding: 0 !important;
+
+        .navbar-brand {
+            margin: 0 !important;
+            .logo {
+                width: 100px;
+                height: 70px;
+                object-fit: contain;
+            }
+        }
+        .navbar-toggler {
+            border: none;
+
+            &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+        }
+
+        ul {
+            .nav-item {
+                margin-left: 15px;
+                a {
+                    font-size: 22px !important;
+                    color: v.$li_color !important;
+
+                    &:hover,
+                    &:focus {
+                        color: v.$li_hover !important;
+                    }
+                }
+            }
+            .dropdown-menu {
+                right: 0 !important;
+                left: auto !important;
+                text-align: right;
+            }
+        }
+    }
+}

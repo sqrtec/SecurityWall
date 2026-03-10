@@ -47,10 +47,10 @@ module.exports = {
 
             // Images
             {
-            test: /\.(png|jpg|jpeg|gif|svg)$/i,
+            test: /\.(png|jpg|jpeg|gif|svg|jfif)$/i,
             type: "asset/resource",
                 generator: {
-                    filename: "src/assets/images/[name][ext]",
+                    filename: "assets/images/[name][ext]",
                 },
             },
 
@@ -59,7 +59,7 @@ module.exports = {
             test: /\.(woff|woff2|eot|ttf|otf)$/i,
             type: "asset/resource",
                 generator: {
-                    filename: "src/assets/fonts/[name][ext]",
+                    filename: "assets/fonts/[name][ext]",
                 },
             },
         ],
