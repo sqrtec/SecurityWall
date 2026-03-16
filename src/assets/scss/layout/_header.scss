@@ -8,10 +8,11 @@ header {
 
         .navbar-brand {
             margin: 0 !important;
+            max-width: 100%;
             .logo {
-                width: 100px;
-                height: 70px;
-                object-fit: contain;
+                height: 85px;
+                width: 100%;
+                object-fit: cover;
             }
         }
         .navbar-toggler {
@@ -23,23 +24,28 @@ header {
             }
         }
 
-        ul {
-            .nav-item {
-                margin-left: 15px;
-                a {
-                    font-size: 22px !important;
-                    color: v.$li_color !important;
+        .navbar-collapse {
+            margin-right: 30px;
+            ul {
+                .nav-item {
+                    margin-left: 20px;
 
-                    &:hover,
-                    &:focus {
-                        color: v.$li_hover !important;
+                    a {
+                        font-size: 22px !important;
+                        color: v.$li_color !important;
+                        font-weight: bold;
+
+                        &:hover,
+                        &:focus {
+                            color: v.$li_hover !important;
+                        }
                     }
                 }
-            }
-            .dropdown-menu {
-                right: 0 !important;
-                left: auto !important;
-                text-align: right;
+                .dropdown-menu {
+                    right: 0 !important;
+                    left: auto !important;
+                    text-align: right;
+                }
             }
         }
     }

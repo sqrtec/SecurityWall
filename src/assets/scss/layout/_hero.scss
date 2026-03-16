@@ -1,0 +1,9 @@
+@use '../abstracts/variables' as v;
+
+.hero {
+    background: url(/src/assets/images/riyadh_night.jfif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}

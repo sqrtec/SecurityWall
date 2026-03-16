@@ -3,19 +3,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: saudi;
     src: url(/src/assets/fonts/Saudi-Regular.ttf);
     font-weight: normal;
 }
+
 @font-face {
     font-family: saudi;
     src: url(/src/assets/fonts/Saudi-Bold.ttf);
     font-weight: bold;
 }
+
 :root {
     --mainFont: font-family: Saudi, sans-serif;
 }
+
 body {
     font-family: saudi !important;
 }
