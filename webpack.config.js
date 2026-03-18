@@ -54,6 +54,15 @@ module.exports = {
                 },
             },
 
+            // video
+            {
+            test: /\.(mp4|webm)$/i,
+            type: "asset/resource",
+                generator: {
+                    filename: "assets/videos/[name][ext]",
+                },
+            },
+
             // Fonts
             {
             test: /\.(woff|woff2|eot|ttf|otf)$/i,

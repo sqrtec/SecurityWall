@@ -1,7 +1,7 @@
 @use '../abstracts/variables' as v;
 
 header {
-    background-color: #F6F8F9;
+    // background-color: #F6F8F9;
 
     nav {
         padding: 0 !important;
@@ -9,8 +9,9 @@ header {
         .navbar-brand {
             margin: 0 !important;
             max-width: 100%;
+
             .logo {
-                height: 85px;
+                height: 65px;
                 width: 100%;
                 object-fit: cover;
             }
@@ -26,9 +27,13 @@ header {
 
         .navbar-collapse {
             margin-right: 30px;
+
             ul {
                 .nav-item {
-                    margin-left: 20px;
+                    margin-left: 25px;
+                    .active {
+                        color: v.$li_hover !important;
+                    }
 
                     a {
                         font-size: 22px !important;
@@ -45,6 +50,23 @@ header {
                     right: 0 !important;
                     left: auto !important;
                     text-align: right;
+                    border-radius: 0 !important;
+                    border: none !important;
+                    background-color: #014955 !important;
+                    padding: 0;
+
+                    li {
+                        a {
+                            color: #fff !important;
+                        }
+
+                        &:hover {
+                            background-color: #fff !important;
+                            a {
+                                color: #014955 !important;
+                            }
+                        }
+                    }
                 }
             }
         }
